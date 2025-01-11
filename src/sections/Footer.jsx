@@ -8,17 +8,24 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-3">
+            <a href="https://github.com/stanislavcicanci">
                 <div className="social-icon">
                     <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2"/>
                 </div>
+            </a>
+            <a href="https://x.com/stanislav_ci?s=11">
                 <div className="social-icon">
                     <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2"/>
                 </div>
+            </a>
+            <a href="http://www.instagram.com/stanislav_cicanci">
                 <div className="social-icon">
                     <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2"/>
                 </div>
+            </a>
             </div>
-                <p className="text-white-500">© 2024 Stanislav. All rights reserved.</p>
+
+                <p className="text-white-500">© 2024-2025 Stanislav. All rights reserved.</p>
         </section>
     )
 }
