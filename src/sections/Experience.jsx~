@@ -8,6 +8,7 @@ import Developer from "../components/Developer.jsx";
 
 const WorkExperience = () => {
     const [animationName, setAnimationName] = useState('idle');
+    <primitive object={Object.values(nodes)[0]}/>
 
     return (
         <section className="c-space my-20" id="work">
@@ -18,11 +19,12 @@ const WorkExperience = () => {
                     <div className="work-canvas">
                         <Canvas>
                             <ambientLight intensity={2}/>
-                            <spotLight position={[10,10,10]} angle={0.15} penumbra={1}/>
-                            <directionalLight position={[10,10,10]} intensity={1}/>
+                            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1}/>
+                            <directionalLight position={[10, 10, 10]} intensity={1}/>
                             <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2}/>
                             <Suspense fallback={<CanvasLoader/>}>
-                                <Developer position-y={-3} scale={3} rotation={[Math.PI / 16, 0, 0]}/>
+                                <Developer position-y={-3} scale={3} rotation={[Math.PI / 16, 0, 0]}
+                                           animationName={animationName}/>
                             </Suspense>
                         </Canvas>
                     </div>
@@ -38,10 +40,10 @@ const WorkExperience = () => {
                                     className="work-content_container group">
                                     <div className="flex flex-col h-full justify-start items-center py-2">
                                         <div className="work-content_logo">
-                                            <img className="w-full h-full" src={icon} alt="" />
+                                            <img className="w-full h-full" src={icon} alt=""/>
                                         </div>
 
-                                        <div className="work-content_bar" />
+                                        <div className="work-content_bar"/>
                                     </div>
 
                                     <div className="sm:p-5 px-2.5 py-5">
